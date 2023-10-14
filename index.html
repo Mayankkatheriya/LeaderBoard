@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <h1>Leader<span>board</span></h1>
+    <form action="" autocomplete="on">
+        <input type="text" id="FirstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+        <input type="text" id="country" placeholder="country">
+        <input type="number" id="score" placeholder="Player Score" min="0">
+        <button class="addPlayer">Add Player</button>
+    </form>
+    <p class="errorMessage">All fields are required*</p>
+    <div class="scoreBoard-container">
+        <div class="scoreboard">
+            <div>
+                <p class = "playerName">Mayank Gupta</p>
+                <p class="main-time">Oct 5, 2023, 15:50:52</p>
+                </div>
+                <p class="player-country">India</p>
+                <p class="player-score">95</p>
+                <div class="scoreboard-btn-container">
+                    <button>🗑️</button>
+                    <button>+5</button>
+                    <button>-5</button>
+                </div>
+        </div>
+        <div class="scoreboard">
+            <div>
+                <p class = "playerName">Khagesh Rana</p>
+                <p class="main-time">Oct 7, 2023, 09:32:25</p>
+                </div>
+                <p class="player-country">India</p>
+                <p class="player-score">85</p>
+                <div class="scoreboard-btn-container">
+                    <button>🗑️</button>
+                    <button>+5</button>
+                    <button>-5</button>
+                </div>
+        </div>
+        <div class="scoreboard">
+            <div>
+                <p class = "playerName">Chirag Gupta</p>
+                <p class="main-time">Oct 4, 2023, 12:15:35</p>
+                </div>
+                <p class="player-country">India</p>
+                <p class="player-score">90</p>
+                <div class="scoreboard-btn-container">
+                    <button>🗑️</button>
+                    <button>+5</button>
+                    <button>-5</button>
+                </div>
+        </div>
+    </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

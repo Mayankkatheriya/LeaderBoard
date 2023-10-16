@@ -53,6 +53,7 @@ document.querySelector("form").addEventListener("submit", (e)=>{
 function activate(e) {
     let btnTarget = e.target.textContent;
     let scores = e.target.parentElement.parentElement.children[2];
+    //! we have to give proper if else if condition otherwise it will give NaN problem
     if (btnTarget === "🗑️") {
         e.target.parentElement.parentElement.remove();
     }

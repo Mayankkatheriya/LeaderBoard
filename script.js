@@ -56,9 +56,15 @@ function activate(e) {
     if (btnTarget === "🗑️") {
         e.target.parentElement.parentElement.remove();
     }
-    scores.textContent = parseInt(scores.textContent)+parseInt(btnTarget)
+    else if(btnTarget==="+5"){
+        scores.textContent = parseInt(scores.textContent)+5    
+    }
+    else if(btnTarget==="-5"){
+        scores.textContent = parseInt(scores.textContent)-5    
+    }
     sortAndAppend();
 }
+//! call back function in click event should be global otherwise it will give error
 function activateButton() {
     // This function activates the buttons in each scoreboard element.
 

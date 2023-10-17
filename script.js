@@ -51,17 +51,26 @@ document.querySelector("form").addEventListener("submit", (e)=>{
 })
 //TODO Activate buttons
 function activate(e) {
-    let btnTarget = e.target.textContent;
+    let btnTarget = e.target.innerText;
     let scores = e.target.parentElement.parentElement.children[2];
+    scores.style.transition = "0.5s ease-in-out"
     //! we have to give proper if else if condition otherwise it will give NaN problem
     if (btnTarget === "🗑️") {
         e.target.parentElement.parentElement.remove();
     }
     else if(btnTarget==="+5"){
-        scores.textContent = parseInt(scores.textContent)+5    
+        scores.style.transform = "scale(1.5)"
+        setTimeout(()=>{
+            scores.style.transform = "scale(1)"
+        },100)
+        scores.innerText = parseInt(scores.innerText)+5    
     }
     else if(btnTarget==="-5"){
-        scores.textContent = parseInt(scores.textContent)-5    
+        scores.style.transform = "scale(1.5)"
+        setTimeout(()=>{
+            scores.style.transform = "scale(1)"
+        },100)
+        scores.innerText = parseInt(scores.innerText)-5    
     }
     sortAndAppend();
 }
